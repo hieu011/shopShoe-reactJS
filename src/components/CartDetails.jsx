@@ -107,9 +107,9 @@ const CartDetails = ({ cart, setCart, setStatusCart }) => {
                                             {parseInt(item.quantity) * parseInt(item.newPrice)}
                                         </td>
                                         <td>
-                                            <button className="btn btn-outline-danger">
+                                            {/* <button className="btn btn-outline-danger">
                                                 <i className="fa-solid fa-trash" onClick={() => handleRemoveProductInCart(item.id)} ></i>
-                                            </button>
+                                            </button> */}
 
                                         </td>
                                     </tr>
