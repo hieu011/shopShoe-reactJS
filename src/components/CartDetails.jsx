@@ -56,7 +56,7 @@ const CartDetails = ({ cart, setCart, setStatusCart }) => {
             setCartListDetails(newCarts);
             setStatusCart(true);
 
-            toast.warn(`Deleted product with ID: ${id} from cart`, {
+            toast.success(`Deleted product with ID: ${id} from cart`, {
                 position: toast.POSITION.TOP_RIGHT
             });
         }
