@@ -159,7 +159,7 @@ function Content({ filterProduct, filterCompanyStatus, filterCategoryStatus, fil
             if (response[i].id == id) {
                 response[i].quantity = response[i].quantity + 1;
 
-                toast.success(`Quantity updated for product ${id}`, {
+                toast.info(`Updated quantity for product`, {
                     position: toast.POSITION.TOP_RIGHT
                 });
                 
@@ -174,7 +174,7 @@ function Content({ filterProduct, filterCompanyStatus, filterCategoryStatus, fil
         }
         await cartService.createCart(newProduct);
 
-        toast.info(`Added product with ID: ${id} to cart`, {
+        toast.success(`Added product to cart`, {
             position: toast.POSITION.TOP_RIGHT
         });
 
@@ -207,11 +207,13 @@ function Content({ filterProduct, filterCompanyStatus, filterCategoryStatus, fil
                                     <i className="fa-solid fa-star" style={{ color: 'yellow' }}></i>
                                     <p className="ms-2">({shoe.reviews} reviews)</p>
                                 </div>
-                                <div className="d-flex gap-3">
+                                <div className="d-flex gap-3 justify-content-center">
                                     <p style={{ textDecoration: 'line-through' }}>${shoe.prevPrice}</p>
                                     <p>${shoe.newPrice}</p>
                                 </div>
-                                <a href="#" className="btn btn-primary">Add to Cart</a>
+                                <div className="d-flex gap-3 justify-content-center">
+                                    <i className="fa-solid fa-cart-shopping" onClick={() => handleAddProductToCart(shoe.id)} style={{fontSize:"24px"}}></i>
+                                </div>
                             </div>
                         </div>
                     )) :
