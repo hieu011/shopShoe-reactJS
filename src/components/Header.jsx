@@ -41,7 +41,7 @@ function Header({ cart, setCart, statusCart, setStatusCart }) {
                     </ul>
                 </div>
                 <Link to="/cartDetails" className="cart-link">
-                    <i className="fa-solid fa-cart-shopping" data-count={cart.length}></i>
+                    <i className="fa-solid fa-cart-arrow-down" data-count={cart.length}></i>
                 </Link>
             </div>
         </div>
