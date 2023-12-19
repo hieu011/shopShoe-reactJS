@@ -22,12 +22,11 @@ function Header({ cart, setCart, statusCart, setStatusCart }) {
         <div className="container d-flex header">
             <div className="col-md-3 d-flex">
                 <i className="fa-solid fa-cart-shopping me-2"></i>
-                <h5><Link className="dropdown-item" to="/">Shoes Ecommerce</Link></h5>
+                <h5><Link className="dropdown-item" to="/">Shoes Shop</Link></h5>
             </div>
             <div className="col-md-5">
                 <form className="d-flex">
-                    <input className="form-control me-2" type="search" placeholder="Enter your search shoes" aria-label="Search" />
-                    <button className="btn btn-outline-success" type="submit">Search</button>
+                    <input className="form-control me-2" type="search" placeholder="Search shoes" aria-label="Search" />
                 </form>
             </div>
             <div className="col-md-4 icon d-flex">
@@ -38,13 +37,11 @@ function Header({ cart, setCart, statusCart, setStatusCart }) {
 
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li><Link className="dropdown-item" to="/dashboard">Dashboard</Link></li>
-                        <li><Link className="dropdown-item" to="/">Back to Home</Link></li>
-                        <li><Link className="dropdown-item" to="#">Logout</Link></li>
+                        <li><Link className="dropdown-item" to="/">Home</Link></li>
                     </ul>
                 </div>
-                <i className="fa-regular fa-heart"></i>
                 <Link to="/cartDetails" className="cart-link">
-                    <i className="fa-solid fa-cart-arrow-down" data-count={cart.length}></i>
+                    <i className="fa-solid fa-cart-shopping" data-count={cart.length}></i>
                 </Link>
             </div>
         </div>

@@ -77,7 +77,7 @@ function SideBar({ data, product, setProduct, cart, setCart, statusCart, setStat
 
     return (
         <div className="d-flex">
-            <div className="col-md-2">
+            <div className="col-md-2" style={{marginRight:"30px"}}>
                 <h3>Category</h3>
                 <ul className="list-group">
                     <li className="list-group-item" >
@@ -227,11 +227,13 @@ function Content({ filterProduct, filterCompanyStatus, filterCategoryStatus, fil
                                     <i className="fa-solid fa-star" style={{ color: 'yellow' }}></i>
                                     <p className="ms-2">({shoe.reviews} reviews)</p>
                                 </div>
-                                <div className="d-flex gap-3">
+                                <div className="d-flex gap-3 justify-content-center">
                                     <p style={{ textDecoration: 'line-through' }}>${shoe.prevPrice}</p>
                                     <p>${shoe.newPrice}</p>
                                 </div>
-                                <a href="#" className="btn btn-primary" onClick={() => handleAddProductToCart(shoe.id)}>Add to Cart</a>
+                                <div className="d-flex gap-3 justify-content-center">
+                                    <i className="fa-solid fa-cart-shopping" onClick={() => handleAddProductToCart(shoe.id)} style={{fontSize:"24px"}}></i>
+                                </div>
                             </div>
                         </div>
                     ))

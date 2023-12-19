@@ -4,8 +4,8 @@ import { Link, Outlet } from "react-router-dom";
 const DashboardLayout = () => {
     return (
         <div className="d-flex">
-            <div className="col-md-2">
-                <h3>Product Management</h3>
+            <div className="col-md-2" style={{marginRight:"30px"}}>
+                <h3>Dashboard</h3>
                 <ul className="list-group">
                     <Link className="list-group-item" to='/dashboard/products'>List Products</Link>
                     <Link className="list-group-item" to='/dashboard/products/create'>Create</Link>
