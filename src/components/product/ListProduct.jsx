@@ -130,8 +130,8 @@ const ListProduct = ({ data }) => {
                                             {shoe.category}
                                         </td>
                                         <td>
-                                            <button className="btn btn-outline-primary">
-                                                <i className="fas fa-edit me-2" onClick={() => handleShowModalUpdate(shoe.id)}></i>
+                                            <button className="btn btn-outline-primary" style={{marginRight:"5px"}}>
+                                                <i className="fas fa-edit" onClick={() => handleShowModalUpdate(shoe.id)}></i>
                                             </button>
                                             <button className="btn btn-outline-danger">
                                                 <i className="fa-solid fa-trash" onClick={() => handleDelete(shoe.id)}></i>
