@@ -1,0 +1,47 @@
+.header {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.fa-cart-shopping {
+    font-size: 30px;
+}
+
+.icon {
+    justify-content: end;
+}
+
+.icon i {
+    margin-left: 20px;
+    font-size: 30px;
+
+}
+
+.cart-link:hover i {
+    color: blue;
+}
+
+.cart-link i {
+    color: black;
+}
+
+.cart-link {
+    position: relative;
+    display: inline-block;
+}
+
+.fa-cart-arrow-down {
+    position: relative;
+}
+
+.fa-cart-arrow-down::after {
+    content: attr(data-count);
+    position: absolute;
+    top: 0;
+    right: 1;
+    background-color: red; /* Màu nền con số */
+    color: white; /* Màu chữ con số */
+    border-radius: 50%; /* Bo tròn con số */
+    padding: 4px 8px; /* Điều chỉnh kích thước của con số */
+    font-size: 12px; /* Kích thước chữ của con số */
+}
